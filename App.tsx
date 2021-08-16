@@ -1,4 +1,5 @@
 import { createAppContainer } from "react-navigation";
+import  { View,Text } from 'react-native';
 import {
   EXPLANATION_SCREEN,
   SETTING_SCREEN,
@@ -34,7 +35,13 @@ if (Platform.OS === "android") {
     },
   });
 }
-
+ export  class image extends React.Component{
+  render(){
+    return(
+      <View> <Text>'Welcome to Quirk</Text></View>
+    )
+  }
+}
 const App = createBottomTabNavigator(
   {
     [MAIN_SCREEN]: MainScreen,
